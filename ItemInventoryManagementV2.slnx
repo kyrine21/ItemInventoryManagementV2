@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AppServiceV2/AppServiceV2.csproj" />
+  <Project Path="DataServiceV2/DataServiceV2.csproj" />
+  <Project Path="ItemInventoryManagementV2/ItemInventoryManagementV2.csproj" />
+</Solution>

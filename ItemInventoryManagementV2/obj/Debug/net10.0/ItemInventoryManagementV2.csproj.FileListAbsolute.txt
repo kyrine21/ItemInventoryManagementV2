@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\bin\Debug\net10.0\ItemInventoryManagementV2.exe
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\bin\Debug\net10.0\ItemInventoryManagementV2.deps.json
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\bin\Debug\net10.0\ItemInventoryManagementV2.runtimeconfig.json
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\bin\Debug\net10.0\ItemInventoryManagementV2.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\bin\Debug\net10.0\ItemInventoryManagementV2.pdb
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ItemInventoryManagementV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ItemInventoryManagementV2.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ItemInventoryManagementV2.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ItemInventoryManagementV2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ItemInventoryManagementV2.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\refint\ItemInventoryManagementV2.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ItemInventoryManagementV2.pdb
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ItemInventoryManagementV2.genruntimeconfig.cache
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemInventoryManagementV2\obj\Debug\net10.0\ref\ItemInventoryManagementV2.dll

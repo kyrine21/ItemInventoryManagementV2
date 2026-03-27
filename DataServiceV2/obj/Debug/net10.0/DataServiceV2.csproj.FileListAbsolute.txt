@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\bin\Debug\net10.0\DataServiceV2.deps.json
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\bin\Debug\net10.0\DataServiceV2.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\bin\Debug\net10.0\DataServiceV2.pdb
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\DataServiceV2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\DataServiceV2.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\DataServiceV2.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\DataServiceV2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\DataServiceV2.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\refint\DataServiceV2.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\DataServiceV2.pdb
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\DataServiceV2\obj\Debug\net10.0\ref\DataServiceV2.dll
