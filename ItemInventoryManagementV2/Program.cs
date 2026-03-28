@@ -1,169 +1,227 @@
 ﻿namespace ItemInventoryManagementV2
 {
+    using AppServiceV2;
+    using ItemModels;
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.Design;
+
     internal class Program
     {
 
-            static List<string> itemNames = new List<string>();
-            static List<int> itemStocks = new List<int>();
+        static ItemService itemService = new ItemService();
 
-            static bool showMenuOption()
+        static bool showMenuOption()
+        {
+            Console.WriteLine("\n_______________________________________\n");
+            Console.Write("Do you want to continue (Y/N): ");
+            string choice = Console.ReadLine().ToUpper();
+            Console.WriteLine("\n_______________________________________\n");
+
+
+
+            switch (choice)
             {
-                Console.WriteLine("\n_______________________________________\n");
-                Console.Write("Do you want to continue (Y/N): ");
-                string choice = Console.ReadLine().ToUpper();
-                Console.WriteLine("\n_______________________________________\n");
+                case "Y":
+                    return true;
+
+                case "N":
+                    return false;
+
+                default:
+                    Console.WriteLine("Invalid input. System will exit.");
+                    Environment.Exit(0);
+                    return false;
+            }
+        }
 
 
+        static void Main(string[] args)
+        {
 
-                switch (choice)
+            bool continueProgram = true;
+
+            while (continueProgram)
+            {
+                Console.WriteLine("\nItem Inventory Management");
+                Console.Write("Enter Function:\n[1] Item List\n[2] Search\n[3] Add \n[4] Update \n[5] Delete\n[6] Exit Program\n");
+                Console.Write("Function: ");
+                int functionInput = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("\n");
+                switch (functionInput)
                 {
-                    case "Y":
-                        return true;
+                    case 1:
+                        listOfItems();
+                        break;
 
-                    case "N":
-                        return false;
+                    case 2:
+                        searchItem();
+                        break;
+
+                    case 3:
+                        addItem();
+                        break;
+
+                    case 4:
+                        updateItem();
+                        break;
+
+                    case 5:
+                        deleteItem();
+                        break;
+
+                    
+
+                    case 6:
+                        Console.WriteLine("\n\n_______________________________________\n");
+                        Console.WriteLine("Program Closed");
+                        Console.WriteLine("_______________________________________\n\n");
+                        Environment.Exit(0);
+                        break;
 
                     default:
-                        Console.WriteLine("Invalid input. System will exit.");
-                        Environment.Exit(0);
-                        return false;
+                        Console.WriteLine("Invalid option");
+                        break;
                 }
+
+                continueProgram = showMenuOption();
+            }
+        }
+
+        static void listOfItems()
+        {
+
+            Console.WriteLine("\n------------------------------------\nItems in Stock: \n------------------------------------\n");
+
+            var items = itemService.getAllItems();
+
+            if (items.Count == 0)
+            {
+                Console.WriteLine("No items in stock");
             }
 
-
-            static void Main(string[] args)
+            foreach (var item in items)
             {
-                PopulateItemsStock();
 
-                bool continueProgram = true;
+                Console.WriteLine("Item: " + item.itemName);
+                Console.WriteLine("Quantity: " + item.itemCount);
 
-                while (continueProgram)
+                if (item.itemCount < 5)
                 {
-                    Console.WriteLine("\nItem Inventory Management");
-                    Console.Write("Enter Function:\n[1] Item List\n[2] Add\n[3] Delete \n[4] Update \n[5] Exit\n");
-                    Console.Write("Function: ");
-                    int functionInput = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("\n");
-                    switch (functionInput)
-                    {
-                        case 1:
-                            listOfItems();
-                            break;
-
-                        case 2:
-                            addItem();
-                            break;
-
-                        case 3:
-                            deleteItem();
-                            break;
-
-                        case 4:
-                            updateItem();
-                            break;
-
-                        case 5:
-                            Console.WriteLine("\n\n_______________________________________\n");
-                            Console.WriteLine("Program Closed");
-                            Console.WriteLine("_______________________________________\n\n");
-                            Environment.Exit(0);
-                            break;
-
-                        default:
-                            Console.WriteLine("Invalid option");
-                            break;
-                    }
-
-                    continueProgram = showMenuOption();
+                    Console.Write("[!] Warning: Low on stocks\n");
                 }
+
+                Console.WriteLine(" ");
+            }
+            Console.Write("\n\n");
+
+        }
+
+        static void searchItem()
+        {
+            Console.WriteLine("_______________________________________\n\n");
+            Console.WriteLine("Search Item");
+            Console.Write("Enter item name to search: ");
+            string itemToSearch = Console.ReadLine().ToUpper();
+            
+        }
+
+        static void addItem()
+        {
+
+            Console.WriteLine("_______________________________________");
+            Console.WriteLine("\n\nAdd Item");
+            Console.Write("Enter item name: ");
+            string toAddItemName = Console.ReadLine().ToUpper();
+
+            bool isItDuplicate = itemService.itemExist(toAddItemName);
+            if (isItDuplicate)
+            {
+                Console.WriteLine("\n-------------------------");
+                Console.WriteLine("[!] " + toAddItemName + " already exists");
+                Console.WriteLine("-------------------------\n\n");
             }
 
-            static void PopulateItemsStock()
+            else
             {
+                Console.Write("Enter item quantity: ");
+                int toAddItemCount = Convert.ToInt32(Console.ReadLine());
 
-                itemNames.Add("SHAMPOO");
-                itemNames.Add("SOAP");
-                itemNames.Add("TOOTHPASTE");
-                itemNames.Add("DEODORANT");
-                itemNames.Add("LOTION");
-
-                itemStocks.Add(20);
-                itemStocks.Add(5);
-                itemStocks.Add(26);
-                itemStocks.Add(12);
-                itemStocks.Add(2);
-
-
-            }
-
-            static void listOfItems()
-            {
-
-                Console.WriteLine("\n------------------------------------\nItems in Stock: \n------------------------------------\n");
-
-                for (int i = 0; i < itemNames.Count; i++)
-                {
-                    Console.WriteLine("Item " + (i + 1) + ": " + itemNames[i]);
-                    Console.WriteLine("Quantity: " + itemStocks[i]);
-
-                    if (itemStocks[i] < 5)
-                    {
-                        Console.Write("[!] Warning: Low on stocks\n");
-                    }
-
-
-                    Console.Write("\n\n");
-
-                }
-            }
-            static void addItem()
-            {
-
-
-                Console.WriteLine("_______________________________________");
-                Console.WriteLine("\n\nAdd Item");
-                Console.Write("Enter item name: ");
-                string toAddItemName = Console.ReadLine().ToUpper();
-                int indexToAddName = itemNames.IndexOf(toAddItemName);
-
-                if (indexToAddName >= 0)
+                if (toAddItemCount < 0)
                 {
                     Console.WriteLine("\n-------------------------");
-                    Console.WriteLine("[!] Item already exists");
+                    Console.WriteLine("[!] Quantity can't be less than 0.");
                     Console.WriteLine("-------------------------\n\n");
+                    return;
+                }
 
+                Items newItem = new Items { itemName = toAddItemName, itemCount = toAddItemCount };
+
+                bool added = itemService.addItem(newItem);
+                if (added)
+                {
+                    {
+                        Console.WriteLine("\n-------------------------");
+                        Console.WriteLine("[!] Item added successfully");
+                        Console.WriteLine("-------------------------\n\n");
+                    }
+                }
+
+            }
+
+        }
+
+        static void updateItem()
+        {
+
+            Console.WriteLine("------------------------------------\n");
+
+            Console.WriteLine("Update Item");
+            Console.Write("Enter item name to update: ");
+            string itemToUpdate = Console.ReadLine().ToUpper();
+
+            bool doesItemExist = itemService.itemExist(itemToUpdate);
+
+            if (!doesItemExist)
+            {
+                Console.WriteLine("\n[!] Item not found");
+            }
+
+            else
+            {
+                Console.Write("Enter new quantity: ");
+                int itemStockToUpdate = Convert.ToInt32(Console.ReadLine());
+
+                if (itemStockToUpdate < 0)
+                {
+
+
+                    Console.WriteLine("\n-------------------------");
+                    Console.WriteLine("[!] Item quantity can't be less than 0.");
+                    Console.WriteLine("-------------------------");
                 }
 
                 else
                 {
-                    Console.Write("Enter item quantity: ");
-                    int toAddItemStock = Convert.ToInt32(Console.ReadLine());
-
-                    if (toAddItemStock >= 0)
+                    bool updated = itemService.updateItem(itemToUpdate, itemStockToUpdate);
+                    if (updated)
                     {
-
-                        itemNames.Add(toAddItemName);
-                        itemStocks.Add(toAddItemStock);
-
                         Console.WriteLine("\n-------------------------");
-                        Console.WriteLine("[!] Item added successfully");
-                        Console.WriteLine("-------------------------");
-
+                        Console.WriteLine("[!] Item updated successfully");
+                        Console.WriteLine("-------------------------\n\n");
                     }
 
                     else
                     {
                         Console.WriteLine("\n-------------------------");
-                        Console.WriteLine("[!] Quantity can't be less than 0.");
-                        Console.WriteLine("-------------------------");
-
+                        Console.WriteLine("[!] Failed to update item");
+                        Console.WriteLine("-------------------------\n\n");
                     }
+
                 }
 
+
             }
+
+        }
 
             static void deleteItem()
             {
@@ -172,98 +230,41 @@
                 Console.Write("Enter item name to delete: ");
                 string itemToDelete = Console.ReadLine().ToUpper();
 
-                int indexToDelete = itemNames.IndexOf(itemToDelete);
+            if (itemService.itemExist(itemToDelete))
+            {
 
-                if (indexToDelete >= 0)
+                Console.Write("Press Y to confirm delete / Press N to cancel: ");
+                string deleteConfirm = Console.ReadLine().ToUpper();
+
+                if (deleteConfirm == "Y")
                 {
 
-                    Console.Write("Press Y to confirm delete / Press N to cancel: ");
-                    string deleteConfirm = Console.ReadLine().ToUpper();
+                    itemService.deleteItem(itemToDelete);
 
-                    if (deleteConfirm == "Y")
-                    {
+                    Console.WriteLine("\n-------------------------");
+                    Console.WriteLine("[!] Item deleted successfully");
+                    Console.WriteLine("-------------------------");
 
-                        itemNames.RemoveAt(indexToDelete);
-                        itemStocks.RemoveAt(indexToDelete);
-
-                        Console.WriteLine("\n-------------------------");
-                        Console.WriteLine("[!] Item deleted successfully");
-                        Console.WriteLine("-------------------------");
-
-                    }
-
-                    else
-                    {
-                        Console.WriteLine("\n-------------------------");
-                        Console.WriteLine("\n[!] Delete cancelled");
-                        Console.WriteLine("\n-------------------------");
-
-                    }
                 }
 
                 else
                 {
                     Console.WriteLine("\n-------------------------");
-                    Console.WriteLine("Item not found");
-                    Console.WriteLine("-------------------------");
+                    Console.WriteLine("\n[!] Delete cancelled");
+                    Console.WriteLine("\n-------------------------");
+
                 }
             }
 
-
-
-            static void updateItem()
+            else
             {
-                Console.WriteLine("\n------------------------------------");
-
-                Console.WriteLine("Items in Stock: \n------------------------------------\n");
-
-                for (int i = 0; i < itemNames.Count; i++)
-                {
-                    Console.WriteLine("Item " + (i + 1) + ": " + itemNames[i]);
-                    Console.WriteLine("Quantity: " + itemStocks[i]);
-                    Console.WriteLine(" ");
-                }
-
-                Console.WriteLine("------------------------------------\n");
-
-                Console.WriteLine("Update Item");
-                Console.Write("Enter item name to update: ");
-                string itemToUpdate = Console.ReadLine().ToUpper();
-                int indexToUpdate = itemNames.IndexOf(itemToUpdate);
-
-                if (indexToUpdate < 0)
-                {
-                    Console.WriteLine("\n[!] Item not found");
-                }
-
-                else
-                {
-                    Console.Write("Enter new quantity: ");
-                    int itemStockToUpdate = Convert.ToInt32(Console.ReadLine());
-
-                    if (itemStockToUpdate >= 0)
-                    {
-                        itemStocks[indexToUpdate] = itemStockToUpdate;
-
-                        Console.WriteLine("\n-------------------------");
-                        Console.WriteLine("[!] Item updated successfully");
-                        Console.WriteLine("-------------------------");
-                    }
-
-                    else
-                    {
-                        Console.WriteLine("\n[!] Quantity can't be less than 0.");
-                    }
-
-                }
-
+                Console.WriteLine("\n-------------------------");
+                Console.WriteLine("Item not found");
+                Console.WriteLine("-------------------------");
             }
+        }
 
 
-        
+    }
 
-    
-
-
-}
 }

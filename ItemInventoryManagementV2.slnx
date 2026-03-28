@@ -2,4 +2,5 @@
   <Project Path="AppServiceV2/AppServiceV2.csproj" />
   <Project Path="DataServiceV2/DataServiceV2.csproj" />
   <Project Path="ItemInventoryManagementV2/ItemInventoryManagementV2.csproj" />
+  <Project Path="ItemModels/ItemModels.csproj" Id="1078794f-0248-4946-886f-b40d8a47aaf7" />
 </Solution>

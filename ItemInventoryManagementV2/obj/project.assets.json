@@ -1,11 +1,67 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "AppServiceV2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "DataServiceV2": "1.0.0",
+          "ItemModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AppServiceV2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AppServiceV2.dll": {}
+        }
+      },
+      "DataServiceV2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "ItemModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataServiceV2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataServiceV2.dll": {}
+        }
+      },
+      "ItemModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ItemModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ItemModels.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AppServiceV2/1.0.0": {
+      "type": "project",
+      "path": "../AppServiceV2/AppServiceV2.csproj",
+      "msbuildProject": "../AppServiceV2/AppServiceV2.csproj"
+    },
+    "DataServiceV2/1.0.0": {
+      "type": "project",
+      "path": "../DataServiceV2/DataServiceV2.csproj",
+      "msbuildProject": "../DataServiceV2/DataServiceV2.csproj"
+    },
+    "ItemModels/1.0.0": {
+      "type": "project",
+      "path": "../ItemModels/ItemModels.csproj",
+      "msbuildProject": "../ItemModels/ItemModels.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "AppServiceV2 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Admin\\.nuget\\packages\\": {}
@@ -33,7 +89,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -7,14 +7,63 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "ItemInventoryManagementV2/1.0.0": {
+        "dependencies": {
+          "AppServiceV2": "1.0.0"
+        },
         "runtime": {
           "ItemInventoryManagementV2.dll": {}
+        }
+      },
+      "AppServiceV2/1.0.0": {
+        "dependencies": {
+          "DataServiceV2": "1.0.0",
+          "ItemModels": "1.0.0"
+        },
+        "runtime": {
+          "AppServiceV2.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DataServiceV2/1.0.0": {
+        "dependencies": {
+          "ItemModels": "1.0.0"
+        },
+        "runtime": {
+          "DataServiceV2.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ItemModels/1.0.0": {
+        "runtime": {
+          "ItemModels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "ItemInventoryManagementV2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AppServiceV2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DataServiceV2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ItemModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

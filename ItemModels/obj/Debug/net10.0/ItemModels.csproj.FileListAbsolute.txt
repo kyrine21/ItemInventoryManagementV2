@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\bin\Debug\net10.0\ItemModels.deps.json
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\bin\Debug\net10.0\ItemModels.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\bin\Debug\net10.0\ItemModels.pdb
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.AssemblyInfo.cs
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.sourcelink.json
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\refint\ItemModels.dll
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.pdb
+C:\Users\Admin\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ref\ItemModels.dll

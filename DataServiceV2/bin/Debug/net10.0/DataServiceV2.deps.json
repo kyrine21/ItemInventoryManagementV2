@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {
       "DataServiceV2/1.0.0": {
+        "dependencies": {
+          "ItemModels": "1.0.0"
+        },
         "runtime": {
           "DataServiceV2.dll": {}
+        }
+      },
+      "ItemModels/1.0.0": {
+        "runtime": {
+          "ItemModels.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "DataServiceV2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ItemModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DataServiceV2\DataServiceV2.csproj" />
+    <ProjectReference Include="..\ItemModels\ItemModels.csproj" />
+  </ItemGroup>
+
 </Project>
