@@ -7,9 +7,9 @@ using ItemModels;
 
 namespace DataServiceV2
 {
-    public class ItemDataService
+    public class ItemDataService : InventoryManagementStructure
     {
-         List<Items> ItemList = new List<Items>();
+        List<Items> ItemList = new List<Items>();
 
         public ItemDataService(){
         

@@ -1,0 +1,26 @@
+[
+  {
+    "itemName": "SHAMPOO",
+    "itemCount": 20
+  },
+  {
+    "itemName": "SOAP",
+    "itemCount": 5
+  },
+  {
+    "itemName": "TOOTHPASTE",
+    "itemCount": 26
+  },
+  {
+    "itemName": "DEODORANT",
+    "itemCount": 12
+  },
+  {
+    "itemName": "LOTION",
+    "itemCount": 2
+  },
+  {
+    "itemName": "DIAPER",
+    "itemCount": 10
+  }
+]
