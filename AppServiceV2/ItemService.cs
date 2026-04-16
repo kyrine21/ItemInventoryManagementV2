@@ -9,7 +9,7 @@ namespace AppServiceV2
 {
     public class ItemService
     {
-        private InventoryManagementService dataService = new InventoryManagementService(new JsonItemDataService());
+        private InventoryManagementService dataService = new InventoryManagementService(new ItemDataServiceDB());
 
         public List<Items> getAllItems()
         {

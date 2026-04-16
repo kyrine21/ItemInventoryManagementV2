@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {}
+    "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
+    "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
+        "projectUniqueName": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
         "projectName": "ItemModels",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\obj\\",
+        "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
+        "packagesPath": "C:\\Users\\Netmanet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Netmanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

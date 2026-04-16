@@ -33,7 +33,7 @@ namespace DataServiceV2
 
         public void SaveDataToJsonFile()
         {
-            using (var outputStream = File.OpenWrite(_jsonFileName))
+            using (var outputStream = File.Create(_jsonFileName))
             {
                 JsonSerializer.Serialize<List<Items>>(
                     new Utf8JsonWriter(outputStream, new JsonWriterOptions
