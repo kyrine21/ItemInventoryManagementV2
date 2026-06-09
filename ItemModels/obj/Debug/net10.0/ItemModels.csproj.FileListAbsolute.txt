@@ -22,3 +22,15 @@ C:\Users\Netmanet\Documents\GitHub\ItemInventoryManagementV2\ItemModels\obj\Debu
 C:\Users\Netmanet\Documents\GitHub\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\refint\ItemModels.dll
 C:\Users\Netmanet\Documents\GitHub\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.pdb
 C:\Users\Netmanet\Documents\GitHub\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ref\ItemModels.dll
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\bin\Debug\net10.0\ItemModels.deps.json
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\bin\Debug\net10.0\ItemModels.dll
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\bin\Debug\net10.0\ItemModels.pdb
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.AssemblyInfoInputs.cache
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.AssemblyInfo.cs
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.csproj.CoreCompileInputs.cache
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.sourcelink.json
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.dll
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\refint\ItemModels.dll
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ItemModels.pdb
+C:\Users\Kyrine\source\repos\ItemInventoryManagementV2\ItemModels\obj\Debug\net10.0\ref\ItemModels.dll

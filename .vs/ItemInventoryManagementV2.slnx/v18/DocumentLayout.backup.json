@@ -1,25 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\",
+  "WorkspaceRootPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F95469C1-337B-0104-1F81-D12495599B54}|DataServiceV2\\DataServiceV2.csproj|c:\\users\\netmanet\\documents\\github\\iteminventorymanagementv2\\dataservicev2\\itemdataservicedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F95469C1-337B-0104-1F81-D12495599B54}|DataServiceV2\\DataServiceV2.csproj|c:\\users\\kyrine\\source\\repos\\iteminventorymanagementv2\\dataservicev2\\itemdataservicedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F95469C1-337B-0104-1F81-D12495599B54}|DataServiceV2\\DataServiceV2.csproj|solutionrelative:dataservicev2\\itemdataservicedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E6B7D6-7AD7-8DBF-0367-979DE9D27401}|ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj|c:\\users\\kyrine\\source\\repos\\iteminventorymanagementv2\\iteminventorymanagementv2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38E6B7D6-7AD7-8DBF-0367-979DE9D27401}|ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj|solutionrelative:iteminventorymanagementv2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Netmanet\\Documents\\GitHub\\Item-Inventory-Management\\InventoryManagement\\ItemDatabaseManagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F95469C1-337B-0104-1F81-D12495599B54}|DataServiceV2\\DataServiceV2.csproj|c:\\users\\netmanet\\documents\\github\\iteminventorymanagementv2\\dataservicev2\\inventorymanagementstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F95469C1-337B-0104-1F81-D12495599B54}|DataServiceV2\\DataServiceV2.csproj|solutionrelative:dataservicev2\\inventorymanagementstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F335E5C0-5E3F-117D-BAA5-460AFA0C3051}|AppServiceV2\\AppServiceV2.csproj|c:\\users\\kyrine\\source\\repos\\iteminventorymanagementv2\\appservicev2\\appservicev2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F335E5C0-5E3F-117D-BAA5-460AFA0C3051}|AppServiceV2\\AppServiceV2.csproj|solutionrelative:appservicev2\\appservicev2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1078794F-0248-4946-886F-B40D8A47AAF7}|ItemModels\\ItemModels.csproj|c:\\users\\netmanet\\documents\\github\\iteminventorymanagementv2\\itemmodels\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1078794F-0248-4946-886F-B40D8A47AAF7}|ItemModels\\ItemModels.csproj|c:\\users\\kyrine\\source\\repos\\iteminventorymanagementv2\\itemmodels\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1078794F-0248-4946-886F-B40D8A47AAF7}|ItemModels\\ItemModels.csproj|solutionrelative:itemmodels\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F335E5C0-5E3F-117D-BAA5-460AFA0C3051}|AppServiceV2\\AppServiceV2.csproj|c:\\users\\netmanet\\documents\\github\\iteminventorymanagementv2\\appservicev2\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F335E5C0-5E3F-117D-BAA5-460AFA0C3051}|AppServiceV2\\AppServiceV2.csproj|c:\\users\\kyrine\\source\\repos\\iteminventorymanagementv2\\appservicev2\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F335E5C0-5E3F-117D-BAA5-460AFA0C3051}|AppServiceV2\\AppServiceV2.csproj|solutionrelative:appservicev2\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F95469C1-337B-0104-1F81-D12495599B54}|DataServiceV2\\DataServiceV2.csproj|c:\\users\\kyrine\\source\\repos\\iteminventorymanagementv2\\dataservicev2\\inventorymanagementstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F95469C1-337B-0104-1F81-D12495599B54}|DataServiceV2\\DataServiceV2.csproj|solutionrelative:dataservicev2\\inventorymanagementstructure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,11 +43,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ItemDataServiceDB.cs",
-              "DocumentMoniker": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\ItemDataServiceDB.cs",
+              "DocumentMoniker": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\ItemDataServiceDB.cs",
               "RelativeDocumentMoniker": "DataServiceV2\\ItemDataServiceDB.cs",
-              "ToolTip": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\ItemDataServiceDB.cs*",
-              "RelativeToolTip": "DataServiceV2\\ItemDataServiceDB.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAkwCUAAAA3AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\ItemDataServiceDB.cs",
+              "RelativeToolTip": "DataServiceV2\\ItemDataServiceDB.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T09:48:20.443Z",
               "IsPinned": true,
@@ -47,11 +55,37 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\Program.cs",
+              "RelativeDocumentMoniker": "ItemInventoryManagementV2\\Program.cs",
+              "ToolTip": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\Program.cs",
+              "RelativeToolTip": "ItemInventoryManagementV2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T14:14:09.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AppServiceV2.csproj",
+              "DocumentMoniker": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj",
+              "RelativeDocumentMoniker": "AppServiceV2\\AppServiceV2.csproj",
+              "ToolTip": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj",
+              "RelativeToolTip": "AppServiceV2\\AppServiceV2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-07T14:01:06.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Items.cs",
-              "DocumentMoniker": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\Items.cs",
+              "DocumentMoniker": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\Items.cs",
               "RelativeDocumentMoniker": "ItemModels\\Items.cs",
-              "ToolTip": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\Items.cs",
+              "ToolTip": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\Items.cs",
               "RelativeToolTip": "ItemModels\\Items.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -60,24 +94,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ItemService.cs",
-              "DocumentMoniker": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\ItemService.cs",
               "RelativeDocumentMoniker": "AppServiceV2\\ItemService.cs",
-              "ToolTip": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\ItemService.cs",
+              "ToolTip": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\ItemService.cs",
               "RelativeToolTip": "AppServiceV2\\ItemService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-16T09:57:48.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "InventoryManagementStructure.cs",
-              "DocumentMoniker": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\InventoryManagementStructure.cs",
+              "DocumentMoniker": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\InventoryManagementStructure.cs",
               "RelativeDocumentMoniker": "DataServiceV2\\InventoryManagementStructure.cs",
-              "ToolTip": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\InventoryManagementStructure.cs",
+              "ToolTip": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\InventoryManagementStructure.cs",
               "RelativeToolTip": "DataServiceV2\\InventoryManagementStructure.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -86,16 +120,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ItemDatabaseManagement.cs",
               "DocumentMoniker": "C:\\Users\\Netmanet\\Documents\\GitHub\\Item-Inventory-Management\\InventoryManagement\\ItemDatabaseManagement.cs",
-              "RelativeDocumentMoniker": "..\\Item-Inventory-Management\\InventoryManagement\\ItemDatabaseManagement.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Netmanet\\Documents\\GitHub\\Item-Inventory-Management\\InventoryManagement\\ItemDatabaseManagement.cs",
               "ToolTip": "C:\\Users\\Netmanet\\Documents\\GitHub\\Item-Inventory-Management\\InventoryManagement\\ItemDatabaseManagement.cs",
-              "RelativeToolTip": "..\\Item-Inventory-Management\\InventoryManagement\\ItemDatabaseManagement.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADgvxQAAAA+AAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\Netmanet\\Documents\\GitHub\\Item-Inventory-Management\\InventoryManagement\\ItemDatabaseManagement.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T09:49:22.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T09:49:22.322Z"
             }
           ]
         }

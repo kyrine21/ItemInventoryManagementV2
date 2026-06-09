@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj": {}
+    "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj": {
+    "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj",
+        "projectUniqueName": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj",
         "projectName": "AppServiceV2",
-        "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj",
-        "packagesPath": "C:\\Users\\Netmanet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\obj\\",
+        "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj",
+        "packagesPath": "C:\\Users\\Kyrine\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Netmanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kyrine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,17 +26,19 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj": {
-                "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj"
+              "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj": {
+                "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj"
               },
-              "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
-                "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj"
+              "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
+                "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj"
               }
             }
           }
@@ -47,10 +53,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -68,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -346,17 +353,21 @@
         }
       }
     },
-    "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj": {
+    "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj",
+        "projectUniqueName": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj",
         "projectName": "DataServiceV2",
-        "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj",
-        "packagesPath": "C:\\Users\\Netmanet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\DataServiceV2\\obj\\",
+        "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\DataServiceV2.csproj",
+        "packagesPath": "C:\\Users\\Kyrine\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\DataServiceV2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Netmanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kyrine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -364,14 +375,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
-                "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj"
+              "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
+                "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj"
               }
             }
           }
@@ -386,15 +399,16 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [
@@ -413,7 +427,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -691,17 +705,21 @@
         }
       }
     },
-    "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj": {
+    "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj",
+        "projectUniqueName": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj",
         "projectName": "ItemInventoryManagementV2",
-        "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj",
-        "packagesPath": "C:\\Users\\Netmanet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\obj\\",
+        "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\ItemInventoryManagementV2.csproj",
+        "packagesPath": "C:\\Users\\Kyrine\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemInventoryManagementV2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Netmanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kyrine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -709,14 +727,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj": {
-                "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj"
+              "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj": {
+                "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\AppServiceV2\\AppServiceV2.csproj"
               }
             }
           }
@@ -731,10 +751,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -752,7 +773,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1030,17 +1051,21 @@
         }
       }
     },
-    "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
+    "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
+        "projectUniqueName": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
         "projectName": "ItemModels",
-        "projectPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
-        "packagesPath": "C:\\Users\\Netmanet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Netmanet\\Documents\\GitHub\\ItemInventoryManagementV2\\ItemModels\\obj\\",
+        "projectPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\ItemModels.csproj",
+        "packagesPath": "C:\\Users\\Kyrine\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kyrine\\source\\repos\\ItemInventoryManagementV2\\ItemModels\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Netmanet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kyrine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -1048,10 +1073,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
+            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -1066,10 +1093,11 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -1087,7 +1115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

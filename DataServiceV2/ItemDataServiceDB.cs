@@ -11,6 +11,7 @@ namespace DataServiceV2
     {
         private string connectionString
        = "Data Source =localhost\\SQLEXPRESS; Initial Catalog = ItemRecord; Integrated Security = True; TrustServerCertificate=True;";
+        
         private SqlConnection sqlConnection;
 
 
@@ -21,14 +22,14 @@ namespace DataServiceV2
 
         public void AddItem(Items item)
         {
-            string addStatement = "INSERT INTO ItemList VALUES (@itemName, @itemQuantity)";
+            var addStatement = "INSERT INTO ItemList VALUES (@itemName, @itemQuantity)";
             SqlCommand addCommand = new SqlCommand(addStatement, sqlConnection);
             addCommand.Parameters.AddWithValue("@itemName", item.itemName);
             addCommand.Parameters.AddWithValue("@itemQuantity", item.itemCount);
             sqlConnection.Open();
 
             addCommand.ExecuteNonQuery();
-
+             
             sqlConnection.Close();
 
         }
