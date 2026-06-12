@@ -6,6 +6,9 @@ namespace ItemModels
 {
     public class Items
     {
+
+        public int itemID { get; set; }
+
         public string itemName { get; set; }
         public int itemCount { get; set; }
 

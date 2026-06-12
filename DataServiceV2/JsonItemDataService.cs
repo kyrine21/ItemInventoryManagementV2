@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Security.Principal;
 using System.Text;
 using System.Text.Json;
+using System.Linq;
 
 namespace DataServiceV2
 {
@@ -16,11 +17,11 @@ namespace DataServiceV2
         public JsonItemDataService()
         {
 
-            Items shampoo = new Items { itemName = "SHAMPOO", itemCount = 20 };
-            Items soap = new Items { itemName = "SOAP", itemCount = 5 };
-            Items toothpaste = new Items { itemName = "TOOTHPASTE", itemCount = 26 };
-            Items deodorant = new Items { itemName = "DEODORANT", itemCount = 12 };
-            Items lotion = new Items { itemName = "LOTION", itemCount = 2 };
+            Items shampoo = new Items {itemID = 1, itemName = "SHAMPOO", itemCount = 20 };
+            Items soap = new Items { itemID = 2, itemName = "SOAP", itemCount = 5 };
+            Items toothpaste = new Items { itemID = 3, itemName = "TOOTHPASTE", itemCount = 26 };
+            Items deodorant = new Items { itemID = 4, itemName = "DEODORANT", itemCount = 12 };
+            Items lotion = new Items { itemID = 5, itemName = "LOTION", itemCount = 2 };
 
             _jsonFileName = $"{AppDomain.CurrentDomain.BaseDirectory}/ItemsInventory.json";
             this.AddItem(shampoo);
@@ -44,13 +45,30 @@ namespace DataServiceV2
 
         public void RetrieveDataFromJsonFile()
         {
-            using (var jsonFileReader = File.OpenText(_jsonFileName))
+            if (!File.Exists(_jsonFileName))
             {
-                ItemList = JsonSerializer.Deserialize<List<Items>>
-                    (jsonFileReader.ReadToEnd(), new JsonSerializerOptions
-                    { PropertyNameCaseInsensitive = true })
-                    .ToList();
+                ItemList = new List<Items>();
+                return;
             }
+
+            var json = File.ReadAllText(_jsonFileName);
+
+            if (string.IsNullOrWhiteSpace(json))
+            {
+                ItemList = new List<Items>();
+                return;
+            }
+
+            ItemList = JsonSerializer.Deserialize<List<Items>>(json,
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+
+                    if (ItemList == null)
+                    {
+                        ItemList = new List<Items>();
+                    }
         }
 
         public List<Items> getAllItems() {
@@ -60,22 +78,35 @@ namespace DataServiceV2
 
         public void AddItem(Items item)
         {
+            RetrieveDataFromJsonFile();
+
             ItemList.Add(item);
-            this.SaveDataToJsonFile();
+
+            SaveDataToJsonFile();
         }
 
 
 
-        public void UpdateItem(int index, int newCount) {
-            ItemList[index].itemCount = newCount;
-            this.SaveDataToJsonFile();
-
-        }
-
-        public void DeleteItem(int index)
+        public void UpdateItem(int itemID, int newCount)
         {
-            ItemList.RemoveAt(index);
-            this.SaveDataToJsonFile();
+            var item = ItemList.FirstOrDefault(x => x.itemID == itemID);
+
+            if (item != null)
+            {
+                item.itemCount = newCount;
+                SaveDataToJsonFile();
+            }
+        }
+
+        public void DeleteItem(int itemID)
+        {
+            var item = ItemList.FirstOrDefault(x => x.itemID == itemID);
+
+            if (item != null)
+            {
+                ItemList.Remove(item);
+                SaveDataToJsonFile();
+            }
         }
 
 

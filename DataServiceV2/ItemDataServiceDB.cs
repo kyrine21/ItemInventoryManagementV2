@@ -22,10 +22,14 @@ namespace DataServiceV2
 
         public void AddItem(Items item)
         {
-            var addStatement = "INSERT INTO ItemList VALUES (@itemName, @itemQuantity)";
+            var addStatement =
+            "INSERT INTO ItemList (itemName, itemQuantity) VALUES ( @itemName, @itemQuantity)";
+
             SqlCommand addCommand = new SqlCommand(addStatement, sqlConnection);
+
             addCommand.Parameters.AddWithValue("@itemName", item.itemName);
             addCommand.Parameters.AddWithValue("@itemQuantity", item.itemCount);
+            
             sqlConnection.Open();
 
             addCommand.ExecuteNonQuery();
@@ -34,11 +38,11 @@ namespace DataServiceV2
 
         }
 
-        public void DeleteItem(int index)
+        public void DeleteItem(int itemID)
         {
-            string addStatement = "DELETE FROM ItemList WHERE itemID = @index";
+            string addStatement = "DELETE FROM ItemList WHERE itemID = @itemID";
             SqlCommand addCommand = new SqlCommand(addStatement, sqlConnection);
-            addCommand.Parameters.AddWithValue("@index", index + 1);
+            addCommand.Parameters.AddWithValue("@itemID", itemID);
             sqlConnection.Open();
 
             addCommand.ExecuteNonQuery();
@@ -48,7 +52,7 @@ namespace DataServiceV2
 
         public List<Items> getAllItems()
         {
-            string getStatementList = "SELECT itemName, itemQuantity FROM ItemList";
+            string getStatementList = "SELECT itemID, itemName, itemQuantity FROM ItemList";
 
             SqlCommand getCommandList = new SqlCommand(getStatementList, sqlConnection);
             sqlConnection.Open();
@@ -58,10 +62,11 @@ namespace DataServiceV2
             List<Items> list = new List<Items>();
             while (reader.Read())
             {
+                int itemID = (int)reader["itemID"];
                 string itemName = reader["itemName"].ToString();
                 int itemCount = (int)reader["itemQuantity"];
 
-                list.Add(new Items { itemName = itemName, itemCount = itemCount });
+                list.Add(new Items { itemID = itemID,itemName = itemName, itemCount = itemCount });
             }
 
             sqlConnection.Close();
@@ -69,16 +74,18 @@ namespace DataServiceV2
 
         }
 
-        public void UpdateItem(int index, int newCount)
+        public void UpdateItem(int itemID, int newCount)
         {
-            string updateStatement = "UPDATE ItemList SET itemQuantity = @newQuantity WHERE itemID = @index";
+            string updateStatement =
+            "UPDATE ItemList SET itemQuantity = @newQuantity WHERE itemID = @itemID";
+
             SqlCommand updateCommand = new SqlCommand(updateStatement, sqlConnection);
+
             updateCommand.Parameters.AddWithValue("@newQuantity", newCount);
-            updateCommand.Parameters.AddWithValue("@index", index + 1);
+            updateCommand.Parameters.AddWithValue("@itemID", itemID);
+
             sqlConnection.Open();
-
             updateCommand.ExecuteNonQuery();
-
             sqlConnection.Close();
         }
     }

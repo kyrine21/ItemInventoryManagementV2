@@ -11,8 +11,8 @@ namespace DataServiceV2
 
         public void AddItem(Items item);
 
-        public void UpdateItem(int index, int newCount);
+        public void UpdateItem(int itemID, int newCount);
 
-        public void DeleteItem(int index);
+        public void DeleteItem(int itemID);
     }
 }

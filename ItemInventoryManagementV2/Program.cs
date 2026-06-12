@@ -129,10 +129,14 @@
 
             Console.WriteLine("_______________________________________");
             Console.WriteLine("\n\nAdd Item");
+
+            Console.Write("Enter item ID: ");
+            int itemID = Convert.ToInt32(Console.ReadLine());
+
             Console.Write("Enter item name: ");
             string toAddItemName = Console.ReadLine().ToUpper();
 
-            bool isItDuplicate = itemService.itemExist(toAddItemName);
+            bool isItDuplicate = itemService.itemExist(itemID);
             if (isItDuplicate)
             {
                 Console.WriteLine("\n-------------------------");
@@ -153,7 +157,7 @@
                     return;
                 }
 
-                Items newItem = new Items { itemName = toAddItemName, itemCount = toAddItemCount };
+                Items newItem = new Items { itemID = itemID, itemName = toAddItemName, itemCount = toAddItemCount };
 
                 bool added = itemService.addItem(newItem);
                 if (added)
@@ -176,7 +180,7 @@
 
             Console.WriteLine("Update Item");
             Console.Write("Enter item name to update: ");
-            string itemToUpdate = Console.ReadLine().ToUpper();
+            int itemToUpdate = Convert.ToInt32(Console.ReadLine());
 
             bool doesItemExist = itemService.itemExist(itemToUpdate);
 
@@ -228,7 +232,7 @@
                 Console.WriteLine("_______________________________________\n\n");
                 Console.WriteLine("Delete Item");
                 Console.Write("Enter item name to delete: ");
-                string itemToDelete = Console.ReadLine().ToUpper();
+                int itemToDelete = Convert.ToInt32(Console.ReadLine());
 
             if (itemService.itemExist(itemToDelete))
             {
